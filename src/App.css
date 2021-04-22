@@ -1,31 +1,32 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background-color:#ccc;
+  background-color: #ccc;
   margin: 0;
   background-size: cover;
 }
 
-.header{
+.header {
   background-color: #444950;
-  height: 50px; 
-  }
+  height: 50px;
+}
 
-.body{
-  height: 94vh ;
+.body {
+  height: 94vh;
   display: flex;
 }
 
-.tabbar{
+.tabbar {
   flex: 1;
-  background-color:#ffffff;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
-.tabbar .understanding{
+.tabbar .understanding {
   height: 40px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: flex;
   align-items: center;
   padding-left: 5px;
@@ -39,31 +40,31 @@
   color: black;
 }
 
-.conten{
+.conten {
   flex: 6;
   height: 100%;
   background-color: #ebedf0;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
-.conten .table_conten{
+.conten .table_conten {
   width: 85%;
   height: 95%;
   background-color: #ffffff;
   border-radius: 10px;
   padding-left: 20px;
-  padding-right: 20px ;
+  padding-right: 20px;
   overflow: auto;
 }
 
-.conten .table_conten .textDescribe{
+.conten .table_conten .textDescribe {
   font-size: 13px;
   margin-top: -15px;
 }
 
-.conten .table_conten .noti{
+.conten .table_conten .noti {
   font-size: 12px;
   border-radius: 20px;
   background-color: #5c3bbf;
@@ -74,10 +75,10 @@
   padding: 2px;
 }
 
-.conten .table_conten .inputBox{
+.conten .table_conten .inputBox {
   margin-top: 20px;
   height: 40px;
-  border-style:solid;
+  border-style: solid;
   border-radius: 10px;
   border-width: 1px;
   border-color: #ccc;
@@ -86,30 +87,30 @@
   padding-left: 10px;
   overflow: hidden;
   position: relative;
-  }
+}
 
-.conten .table_conten .inputBox .input{
+.conten .table_conten .inputBox .input {
   width: 100%;
 }
 
-.conten .table_conten .choose_intent{
+.conten .table_conten .choose_intent {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
   align-items: center;
 }
 
-.conten .table_conten .conten_1{
+.conten .table_conten .conten_1 {
   display: flex;
   flex: 1;
   align-items: center;
   position: relative;
 }
 
-.conten .table_conten .conten_2{
+.conten .table_conten .conten_2 {
   height: 40px;
   width: 40%;
-  border-style:solid;
+  border-style: solid;
   border-radius: 10px;
   border-width: 1px;
   border-color: #ccc;
@@ -122,14 +123,14 @@
 
 /* pop up intent */
 
-.conten .table_conten .conten_1 .pop_up_intent{
+.conten .table_conten .conten_1 .pop_up_intent {
   position: absolute;
   width: 70%;
   height: 250px;
   top: 44px;
   left: 53px;
   border-radius: 5px;
-   border-style: solid;
+  border-style: solid;
   border-color: #ccc;
   border-width: 1px;
   background-color: #fff;
@@ -141,7 +142,7 @@
 
 /* conten popups intent */
 
-.conten .table_conten .conten_1 .conten_intent{
+.conten .table_conten .conten_1 .conten_intent {
   display: flex;
   flex: 4;
   flex-direction: column;
@@ -149,12 +150,12 @@
   padding: 0 10px 0 10px;
 }
 
-.conten .table_conten .Out_of_Scope{
+.conten .table_conten .Out_of_Scope {
   display: flex;
 }
 
-.conten .table_conten .add_trait{
-    display: flex;
+.conten .table_conten .add_trait {
+  display: flex;
   min-height: 40px;
   background-color: #f2f2f2;
   margin-top: 30px;
@@ -162,12 +163,12 @@
   align-items: center;
 }
 
-.conten .table_conten .add_trait .text_add_trait{
+.conten .table_conten .add_trait .text_add_trait {
   font-size: 12px;
   margin-left: 10px;
 }
 
-.conten .table_conten .buttom{
+.conten .table_conten .buttom {
   margin-top: 20px;
   width: 130px;
   height: 30px;
@@ -175,8 +176,8 @@
   border-width: 0;
   border-radius: 5px;
   font-size: 13px;
-  font-weight:600;
-  color: #ffffff  ;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 [contenteditable] {

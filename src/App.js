@@ -9,6 +9,7 @@ import Traits from "./container/Traits";
 import Utterances from "./container/Utterances";
 import Setting from "./container/Setting";
 import Insights from "./container/Insights";
+import ChatView from "./container/ChatView";
 
 function App() {
   const [activePage, setActivePage] = useState("/");
@@ -48,6 +49,38 @@ function App() {
               }}
             >
               Understanding
+            </div>
+          </NavLink>
+          <NavLink
+            // style={
+            //   activePage == "/Chatview" && {
+            //     borderLeftWidth: 4,
+            //     borderLeftStyle: "solid",
+            //     borderLeftColor: "cornflowerblue",
+            //   }
+            // }
+            onClick={() => setActivePage("/Chatview")}
+            to="/Chatview"
+            // to="/"
+            className="understanding"
+          >
+            <div>
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/bBFFm_nHhfQ.png"
+                style={{
+                  width: 15,
+                  height: 15,
+                  marginLeft: 10,
+                }}
+              />
+            </div>
+            <div
+              style={{
+                paddingLeft: 10,
+                fontWeight: "bold",
+              }}
+            >
+              Test Chat
             </div>
           </NavLink>
           <div
@@ -151,6 +184,7 @@ function App() {
           <Route path="/Utterances" component={Utterances} />
           <Route path="/Setting" component={Setting} />
           <Route path="/Insights" component={Insights} />
+          <Route path="/Chatview" component={ChatView} />
         </div>
       </div>
     </div>
