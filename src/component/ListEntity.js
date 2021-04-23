@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ListEntity.css";
 import EntityItem from "./EntityItem";
 
-function ListEntity() {
+function ListEntity({ data }) {
   return (
     <div className="box_show_data">
       <div className="title">
@@ -11,8 +11,10 @@ function ListEntity() {
         <div className="item_title"> Resolved value</div>
         <div className="item_title"> Confidence</div>
       </div>
-      <EntityItem />
-      <EntityItem />
+      {data &&
+        data.map((item) => (
+          <EntityItem name={item.valueSelect} entity={item.entity} />
+        ))}
     </div>
   );
 }

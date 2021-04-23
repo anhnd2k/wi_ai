@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ListEntity.css";
 import PopUpCreateEntity from "../base/PopUpCreateEntity";
 
-function EntityItem() {
+function EntityItem({ name, entity }) {
   const [popUps, setPopUp] = useState(false);
   const [indexPopUpActive, setIndexPopUpActive] = useState(null);
   const [checkSame, setCheckSame] = useState(false);
@@ -29,7 +29,7 @@ function EntityItem() {
 
   return (
     <div className="item">
-      <div className="best_item name_item">ssadas</div>
+      <div className="best_item name_item">{entity}</div>
       <div className="best_item">
         <div onClick={() => onPopUp(1)} className="role">
           <div style={{ fontSize: "12px" }}>Role</div>
@@ -57,7 +57,7 @@ function EntityItem() {
           onClick={() => onPopUp(2)}
           className="role"
         >
-          <div style={{ fontSize: "12px" }}>Value</div>
+          <div style={{ fontSize: "12px" }}>{name}</div>
           <img
             style={{ width: 10, height: 10, marginRight: 15 }}
             src="https://image.flaticon.com/icons/png/128/25/25243.png"
